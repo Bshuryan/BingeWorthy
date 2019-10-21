@@ -13,10 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let layer = CAGradientLayer()
-        layer.frame = view.bounds
-        layer.colors = [UIColor.orange.cgColor, UIColor.yellow.cgColor]
-        view.layer.addSublayer(layer)
+        //let layer = CAGradientLayer()
+        //layer.frame = view.bounds
+        //layer.colors = [UIColor.orange.cgColor, UIColor.yellow.cgColor]
+        //view.layer.addSublayer(layer)
     }
 
 
