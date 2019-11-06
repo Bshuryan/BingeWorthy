@@ -56,8 +56,11 @@
                                         <state key="normal" title="Create Account">
                                             <color key="titleColor" red="0.7803921568627451" green="0.0" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="N5a-VQ-tYj" kind="show" id="1Yi-qZ-nBa"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have one? Login." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxR-RW-jTJ">
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have one? Login." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxR-RW-jTJ">
                                         <rect key="frame" x="0.0" y="308.5" width="350" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -202,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKP-cf-3Qb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="21"/>
+            <point key="canvasLocation" x="72" y="749"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="JmB-n9-6ea">
@@ -223,27 +226,21 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwN-mF-jx8">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
+                                    <barButtonItem title="Home" id="Su9-SN-SpG"/>
                                     <barButtonItem title="Settngs" id="NnU-jk-Li7"/>
                                 </items>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="barTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Micah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww6-Az-kwv">
-                                <rect key="frame" x="20" y="136" width="374" height="39"/>
+                                <rect key="frame" x="20" y="136" width="374" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="33"/>
                                 <color key="textColor" red="0.16862745098039217" green="0.17254901960784313" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4DP-E0-Pvr">
-                                <rect key="frame" x="32" y="185" width="350" height="608"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176469999998" green="0.45098039220000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="TwN-mF-jx8" firstAttribute="top" secondItem="4DP-E0-Pvr" secondAttribute="bottom" constant="20" id="131-3t-HDG"/>
-                            <constraint firstItem="3zI-yb-OU2" firstAttribute="trailing" secondItem="4DP-E0-Pvr" secondAttribute="trailing" constant="32" id="3BI-gd-x3f"/>
-                            <constraint firstItem="4DP-E0-Pvr" firstAttribute="leading" secondItem="3zI-yb-OU2" secondAttribute="leading" constant="32" id="67y-Bg-Sof"/>
                             <constraint firstItem="TwN-mF-jx8" firstAttribute="bottom" secondItem="3zI-yb-OU2" secondAttribute="bottom" id="7MX-zG-yXD"/>
                             <constraint firstItem="Ray-rz-BHk" firstAttribute="top" secondItem="3zI-yb-OU2" secondAttribute="top" constant="26" id="8ZP-wW-3n6"/>
                             <constraint firstItem="3zI-yb-OU2" firstAttribute="trailing" secondItem="ww6-Az-kwv" secondAttribute="trailing" constant="20" id="FJG-px-f6O"/>
@@ -251,12 +248,9 @@
                             <constraint firstItem="Ray-rz-BHk" firstAttribute="leading" secondItem="3zI-yb-OU2" secondAttribute="leading" id="JlT-Q0-lgM"/>
                             <constraint firstItem="Ray-rz-BHk" firstAttribute="trailing" secondItem="3zI-yb-OU2" secondAttribute="trailing" id="O3D-Hk-4yO"/>
                             <constraint firstItem="ww6-Az-kwv" firstAttribute="leading" secondItem="3zI-yb-OU2" secondAttribute="leading" constant="20" id="OCe-d5-1DA"/>
-                            <constraint firstItem="4DP-E0-Pvr" firstAttribute="top" secondItem="ww6-Az-kwv" secondAttribute="bottom" constant="10" id="Qmv-Zz-bou"/>
                             <constraint firstItem="ww6-Az-kwv" firstAttribute="top" secondItem="Ray-rz-BHk" secondAttribute="bottom" constant="10" id="TVH-Pe-iAf"/>
                             <constraint firstItem="TwN-mF-jx8" firstAttribute="trailing" secondItem="3zI-yb-OU2" secondAttribute="trailing" id="YBL-iC-6fK"/>
-                            <constraint firstItem="TwN-mF-jx8" firstAttribute="top" secondItem="4DP-E0-Pvr" secondAttribute="bottom" constant="20" id="eja-oY-DlN"/>
                             <constraint firstItem="ww6-Az-kwv" firstAttribute="top" secondItem="Ray-rz-BHk" secondAttribute="bottom" constant="10" id="gkh-Cb-noe"/>
-                            <constraint firstItem="4DP-E0-Pvr" firstAttribute="top" secondItem="ww6-Az-kwv" secondAttribute="bottom" constant="10" id="h8U-11-dgJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3zI-yb-OU2"/>
                     </view>
@@ -275,7 +269,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2044.9275362318842" y="32.8125"/>
+            <point key="canvasLocation" x="949" y="21"/>
         </scene>
     </scenes>
 </document>
