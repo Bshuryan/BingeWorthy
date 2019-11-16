@@ -10,41 +10,266 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Create An Account-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BingeWorthy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Create An Account" customClass="ViewController" customModule="BingeWorthy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hY-Kr-GQ1">
-                                <rect key="frame" x="50" y="291" width="173" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Create an account">
-                                        <attributes>
-                                            <color key="NSColor" red="0.16850478622733672" green="0.17146329497839605" blue="0.18524901709796948" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="21" name="Skia-Regular"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHd-da-QEV">
-                                <rect key="frame" x="50" y="331" width="312" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.45882352941176469" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits" textContentType="email"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="35m-Pj-miC">
+                                <rect key="frame" x="32" y="333" width="350" height="329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hY-Kr-GQ1">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="21"/>
+                                        <color key="textColor" red="0.16862745098039217" green="0.17254901960784313" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHd-da-QEV">
+                                        <rect key="frame" x="0.0" y="48.5" width="350" height="30"/>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkP-Oi-upD">
+                                        <rect key="frame" x="0.0" y="102.5" width="350" height="21"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="18"/>
+                                        <color key="textColor" red="0.16862745098039217" green="0.17254901960784313" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E7O-d6-8B0">
+                                        <rect key="frame" x="0.0" y="147.5" width="350" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0h-um-WN8">
+                                        <rect key="frame" x="0.0" y="201.5" width="350" height="21"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="18"/>
+                                        <color key="textColor" red="0.16850478620000001" green="0.17146329499999999" blue="0.1852490171" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMT-YR-tzb">
+                                        <rect key="frame" x="0.0" y="246.5" width="350" height="38"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="21"/>
+                                        <state key="normal" title="Create Account">
+                                            <color key="titleColor" red="0.7803921568627451" green="0.0" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="N5a-VQ-tYj" kind="show" id="1Yi-qZ-nBa"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have one? Login." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxR-RW-jTJ">
+                                        <rect key="frame" x="0.0" y="308.5" width="350" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bVG-1Q-7FG">
+                                <rect key="frame" x="0.0" y="97" width="414" height="178"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFO-H7-zhe">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular_Bold" family="Skia" pointSize="64"/>
+                                        <color key="textColor" red="0.78039215689999997" green="0.0" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BingeWorthy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FI-QL-zGk">
+                                        <rect key="frame" x="0.0" y="75" width="414" height="75"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="64"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="finding what you love" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miQ-EG-QgN">
+                                        <rect key="frame" x="0.0" y="150" width="414" height="28"/>
+                                        <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="24"/>
+                                        <color key="textColor" red="0.78039215689999997" green="0.0" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.45098039215686275" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bVG-1Q-7FG" secondAttribute="trailing" id="2ne-Z8-sbU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="35m-Pj-miC" secondAttribute="trailing" constant="32" id="IcQ-G7-jo3"/>
+                            <constraint firstItem="35m-Pj-miC" firstAttribute="top" secondItem="bVG-1Q-7FG" secondAttribute="bottom" constant="58" id="U5f-DL-FmV"/>
+                            <constraint firstItem="35m-Pj-miC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="gTZ-oe-v8e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="35m-Pj-miC" secondAttribute="trailing" constant="32" id="hI3-xL-E29"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="35m-Pj-miC" secondAttribute="bottom" constant="200" id="sLU-BS-u7R"/>
+                            <constraint firstItem="35m-Pj-miC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="wR1-tN-a7j"/>
+                            <constraint firstItem="bVG-1Q-7FG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xgO-vE-P71"/>
+                            <constraint firstItem="bVG-1Q-7FG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="z2c-Up-dk0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="0eC-wy-b9x">
+            <objects>
+                <viewController id="QXZ-jD-Hee" userLabel="Login" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="trB-Up-FKd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eZd-Be-asg" userLabel="Logo">
+                                <rect key="frame" x="0.0" y="97" width="414" height="178"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brf-Pa-n4n">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular_Bold" family="Skia" pointSize="64"/>
+                                        <color key="textColor" red="0.78039215689999997" green="0.0" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BingeWorthy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2O1-PX-5is">
+                                        <rect key="frame" x="0.0" y="75" width="414" height="75"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="64"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="finding what you love" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJf-pY-ps8">
+                                        <rect key="frame" x="0.0" y="150" width="414" height="28"/>
+                                        <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="24"/>
+                                        <color key="textColor" red="0.78039215689999997" green="0.0" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="SCh-hu-CTh" userLabel="Login">
+                                <rect key="frame" x="32" y="333" width="350" height="329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4F-6r-Nbo">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="21"/>
+                                        <color key="textColor" red="0.16862745100000001" green="0.17254901959999999" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUB-t1-IyC">
+                                        <rect key="frame" x="0.0" y="48.5" width="350" height="30"/>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bed-N2-S0G">
+                                        <rect key="frame" x="0.0" y="102.5" width="350" height="21"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="18"/>
+                                        <color key="textColor" red="0.16862745100000001" green="0.17254901959999999" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3KV-pU-WWm">
+                                        <rect key="frame" x="0.0" y="147.5" width="350" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TN-Bi-dGs">
+                                        <rect key="frame" x="0.0" y="201.5" width="350" height="21"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="18"/>
+                                        <color key="textColor" red="0.16850478620000001" green="0.17146329499999999" blue="0.1852490171" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYo-a3-bgn">
+                                        <rect key="frame" x="0.0" y="246.5" width="350" height="38"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="21"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.78039215689999997" green="0.0" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dont have an account? Create one." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEK-sQ-Uof">
+                                        <rect key="frame" x="0.0" y="308.5" width="350" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.45098039220000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SCh-hu-CTh" firstAttribute="top" secondItem="eZd-Be-asg" secondAttribute="bottom" constant="58" id="6vk-A3-KDo"/>
+                            <constraint firstItem="eZd-Be-asg" firstAttribute="leading" secondItem="h2n-jM-pxY" secondAttribute="leading" id="JyV-lG-kCk"/>
+                            <constraint firstItem="h2n-jM-pxY" firstAttribute="trailing" secondItem="eZd-Be-asg" secondAttribute="trailing" id="Mkc-Fy-mqB"/>
+                            <constraint firstItem="eZd-Be-asg" firstAttribute="top" secondItem="h2n-jM-pxY" secondAttribute="top" constant="53" id="WNG-uO-oTc"/>
+                            <constraint firstItem="h2n-jM-pxY" firstAttribute="trailing" secondItem="SCh-hu-CTh" secondAttribute="trailing" constant="32" id="aDV-Ml-rFP"/>
+                            <constraint firstItem="SCh-hu-CTh" firstAttribute="leading" secondItem="h2n-jM-pxY" secondAttribute="leading" constant="32" id="dDH-tP-lZY"/>
+                            <constraint firstItem="SCh-hu-CTh" firstAttribute="top" secondItem="eZd-Be-asg" secondAttribute="bottom" constant="58" id="lzj-Bx-OH7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h2n-jM-pxY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rKP-cf-3Qb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="749"/>
+        </scene>
+        <!--Home Page-->
+        <scene sceneID="JmB-n9-6ea">
+            <objects>
+                <viewController id="N5a-VQ-tYj" userLabel="Home Page" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mz5-v7-VXL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ray-rz-BHk">
+                                <rect key="frame" x="0.0" y="70" width="414" height="56"/>
+                                <color key="barTintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="N5a-VQ-tYj" id="dko-gf-T9J"/>
+                                </connections>
+                            </searchBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwN-mF-jx8">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="Home" id="Su9-SN-SpG"/>
+                                    <barButtonItem title="Settngs" id="NnU-jk-Li7"/>
+                                </items>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Micah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww6-Az-kwv">
+                                <rect key="frame" x="20" y="136" width="374" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Skia-Regular" family="Skia" pointSize="33"/>
+                                <color key="textColor" red="0.16862745098039217" green="0.17254901960784313" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.45098039220000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TwN-mF-jx8" firstAttribute="bottom" secondItem="3zI-yb-OU2" secondAttribute="bottom" id="7MX-zG-yXD"/>
+                            <constraint firstItem="Ray-rz-BHk" firstAttribute="top" secondItem="3zI-yb-OU2" secondAttribute="top" constant="26" id="8ZP-wW-3n6"/>
+                            <constraint firstItem="3zI-yb-OU2" firstAttribute="trailing" secondItem="ww6-Az-kwv" secondAttribute="trailing" constant="20" id="FJG-px-f6O"/>
+                            <constraint firstItem="TwN-mF-jx8" firstAttribute="leading" secondItem="3zI-yb-OU2" secondAttribute="leading" id="HIT-LH-QIg"/>
+                            <constraint firstItem="Ray-rz-BHk" firstAttribute="leading" secondItem="3zI-yb-OU2" secondAttribute="leading" id="JlT-Q0-lgM"/>
+                            <constraint firstItem="Ray-rz-BHk" firstAttribute="trailing" secondItem="3zI-yb-OU2" secondAttribute="trailing" id="O3D-Hk-4yO"/>
+                            <constraint firstItem="ww6-Az-kwv" firstAttribute="leading" secondItem="3zI-yb-OU2" secondAttribute="leading" constant="20" id="OCe-d5-1DA"/>
+                            <constraint firstItem="ww6-Az-kwv" firstAttribute="top" secondItem="Ray-rz-BHk" secondAttribute="bottom" constant="10" id="TVH-Pe-iAf"/>
+                            <constraint firstItem="TwN-mF-jx8" firstAttribute="trailing" secondItem="3zI-yb-OU2" secondAttribute="trailing" id="YBL-iC-6fK"/>
+                            <constraint firstItem="ww6-Az-kwv" firstAttribute="top" secondItem="Ray-rz-BHk" secondAttribute="bottom" constant="10" id="gkh-Cb-noe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3zI-yb-OU2"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="k6I-2s-a8C" id="Iv5-yy-Lmf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zK9-iZ-Bux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="k6I-2s-a8C">
+                    <connections>
+                        <outlet property="delegate" destination="N5a-VQ-tYj" id="1Ym-IW-Fw0"/>
+                        <outlet property="searchBar" destination="Ray-rz-BHk" id="1s8-It-cR4"/>
+                        <outlet property="searchContentsController" destination="N5a-VQ-tYj" id="NcU-78-Ocb"/>
+                        <outlet property="searchResultsDataSource" destination="N5a-VQ-tYj" id="eU6-ve-6dw"/>
+                        <outlet property="searchResultsDelegate" destination="N5a-VQ-tYj" id="ewJ-Zu-dsW"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="949" y="21"/>
         </scene>
     </scenes>
 </document>
