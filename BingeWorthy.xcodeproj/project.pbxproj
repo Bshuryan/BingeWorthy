@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C698842238DA209007B5568 /* ShowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C698841238DA209007B5568 /* ShowData.swift */; };
+		1C698844238DA93F007B5568 /* tv_data_all.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1C698843238DA93F007B5568 /* tv_data_all.csv */; };
 		1CAAB07A2380A97400EBA300 /* tv_recs_full.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1CAAB0792380A97400EBA300 /* tv_recs_full.csv */; };
 		1CAAB07C2380B6C500EBA300 /* RecSys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAAB07B2380B6C500EBA300 /* RecSys.swift */; };
 		1CB440B6233139B700324A01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB440B5233139B700324A01 /* AppDelegate.swift */; };
@@ -36,7 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CAAB0792380A97400EBA300 /* tv_recs_full.csv */ = {isa = PBXFileReference; lastKnownFileType = file; path = tv_recs_full.csv; sourceTree = SOURCE_ROOT; };
+		1C698841238DA209007B5568 /* ShowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowData.swift; sourceTree = "<group>"; };
+		1C698843238DA93F007B5568 /* tv_data_all.csv */ = {isa = PBXFileReference; lastKnownFileType = file; path = tv_data_all.csv; sourceTree = SOURCE_ROOT; };
+		1CAAB0792380A97400EBA300 /* tv_recs_full.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = tv_recs_full.csv; sourceTree = SOURCE_ROOT; };
 		1CAAB07B2380B6C500EBA300 /* RecSys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecSys.swift; sourceTree = "<group>"; };
 		1CB440B2233139B700324A01 /* BingeWorthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingeWorthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB440B5233139B700324A01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 		1CB440B4233139B700324A01 /* BingeWorthy */ = {
 			isa = PBXGroup;
 			children = (
+				1C698843238DA93F007B5568 /* tv_data_all.csv */,
 				1CAAB0792380A97400EBA300 /* tv_recs_full.csv */,
 				1CB440B5233139B700324A01 /* AppDelegate.swift */,
 				1CB440B7233139B700324A01 /* ViewController.swift */,
@@ -109,6 +114,7 @@
 				1CB440BE233139BA00324A01 /* LaunchScreen.storyboard */,
 				1CB440C1233139BA00324A01 /* Info.plist */,
 				1CAAB07B2380B6C500EBA300 /* RecSys.swift */,
+				1C698841238DA209007B5568 /* ShowData.swift */,
 			);
 			path = BingeWorthy;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CB440C0233139BA00324A01 /* LaunchScreen.storyboard in Resources */,
+				1C698844238DA93F007B5568 /* tv_data_all.csv in Resources */,
 				1CB440BD233139BA00324A01 /* Assets.xcassets in Resources */,
 				1CAAB07A2380A97400EBA300 /* tv_recs_full.csv in Resources */,
 				1CB440BB233139B700324A01 /* Main.storyboard in Resources */,
@@ -263,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C698842238DA209007B5568 /* ShowData.swift in Sources */,
 				1CB440B8233139B700324A01 /* ViewController.swift in Sources */,
 				1CB440B6233139B700324A01 /* AppDelegate.swift in Sources */,
 				1CAAB07C2380B6C500EBA300 /* RecSys.swift in Sources */,
