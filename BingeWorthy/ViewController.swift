@@ -178,6 +178,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             seasons.text = data[4]
             overview.text = data[3]
             genre.text = data[2]
+            
             let service = data[1]
             if (service == "Netflix")
             {
@@ -201,7 +202,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             
             for n in 0...5
             {
-                finalData = finalData.append(recomData[n])
+                finalData = finalData + recomData[n]
             }
             recom.text = finalData
         }
