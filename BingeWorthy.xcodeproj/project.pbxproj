@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		1C698841238DA209007B5568 /* ShowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowData.swift; sourceTree = "<group>"; };
-		1C698843238DA93F007B5568 /* tv_data_all.csv */ = {isa = PBXFileReference; lastKnownFileType = file; path = tv_data_all.csv; sourceTree = SOURCE_ROOT; };
+		1C698843238DA93F007B5568 /* tv_data_all.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = tv_data_all.csv; sourceTree = SOURCE_ROOT; };
 		1CAAB0792380A97400EBA300 /* tv_recs_full.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = tv_recs_full.csv; sourceTree = SOURCE_ROOT; };
 		1CAAB07B2380B6C500EBA300 /* RecSys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecSys.swift; sourceTree = "<group>"; };
 		1CB440B2233139B700324A01 /* BingeWorthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingeWorthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
