@@ -135,6 +135,7 @@ class ViewController: UIViewController {
     
 }
 
+//Gives the number of rows in the tableview
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -148,7 +149,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             return(showNames.count)
         }
     }
-    
+//Fills in the rows of with the elements from the list
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
@@ -163,13 +164,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+ //Once the row is selected load the segue named "segue" to the next view controller
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         myIndex = indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
     }
-    
+//Prepare the view controller at the end of the segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue" {
             let name = showNames[myIndex]
@@ -210,7 +211,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 }
 
-
+//takes the info added into the search bar and searches the tableview
 extension ViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
