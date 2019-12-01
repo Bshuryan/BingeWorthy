@@ -119,18 +119,28 @@ class ViewController: UIViewController {
     var searching = false
     var myIndex = 0
     
-    @IBOutlet weak var recom: UILabel!
-    @IBOutlet weak var showImage: UIImageView!
-    @IBOutlet weak var showName: UILabel!
-    @IBOutlet weak var seasons: UILabel!
-    @IBOutlet weak var overview: UILabel!
-    @IBOutlet weak var genre: UILabel!
-    @IBOutlet weak var streamer: UIImageView!
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+    }
+    
+    //Prepare the view controller at the end of the segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue"
+        {
+            let vc = segue.destination as! ViewController2
+            
+            let name = showNames[myIndex]
+            let data = getShowData(show: name)
+            vc.showNameText = data[0]
+            vc.seasonsText = data[4]
+            vc.overviewText = data[3]
+            vc.genreText = data[2]
+            vc.streamerText = data[1]
+            vc.showImageText = data[5]
+            vc.recomArray = getShowRecs(show: name)
+        }
     }
     
 }
@@ -169,44 +179,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     {
         myIndex = indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
-    }
-//Prepare the view controller at the end of the segue
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segue" {
-            let name = showNames[myIndex]
-            let data = getShowData(show: name)
-            showName.text = data[0]
-            seasons.text = data[4]
-            overview.text = data[3]
-            genre.text = data[2]
-            
-            let service = data[1]
-            if (service == "Netflix")
-            {
-                streamer.image = UIImage(named: "Netflix")
-            }
-            else if(service == "Hulu")
-            {
-                streamer.image = UIImage(named: "hulu")
-            }
-            else if(service == "Amazon Prime Video")
-            {
-                streamer.image = UIImage(named: "amazonprime")
-            }
-            else
-            {
-                streamer.image = UIImage(named: "HBO-Logo")
-            }
-            
-            let recomData = getShowData(show: name)
-            var finalData = ""
-            
-            for n in 0...5
-            {
-                finalData = finalData + recomData[n]
-            }
-            recom.text = finalData
-        }
     }
 
 }
